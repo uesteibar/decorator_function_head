@@ -1,4 +1,7 @@
 defmodule DecoratorFunctionHead do
+  use DecoratorFunctionHead.PrintDecorator
+
+  @decorate print()
   def hello(first_name, last_name \\ nil)
 
   def hello(:world, _last_name) do
